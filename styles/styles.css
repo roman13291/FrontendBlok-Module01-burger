@@ -201,3 +201,38 @@ text-transform: capitalize;
 .banner-btn:hover{
     background-color: var(--accent-dark);
 }
+
+
+/*menu*/
+.menu-header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 100px;
+    margin-bottom: 23px;
+}
+.menu-title{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu-box{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows: auto;
+    gap: 50px 20px;
+}
+.menu-thumb{
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+.menu-thumb img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    object-fit: cover;
+}
