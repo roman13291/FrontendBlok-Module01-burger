@@ -212,6 +212,10 @@ text-transform: capitalize;
     margin-bottom: 23px;
 }
 .menu-title{
+    color: var(--dark);
+    font-family: var(--nunito-sans);
+    font-size: 44px;
+    font-weight: 700;
     margin-top: 0;
     margin-bottom: 0;
 }
