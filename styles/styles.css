@@ -215,6 +215,8 @@ text-transform: capitalize;
     color: var(--dark);
     font-family: var(--nunito-sans);
     font-size: 44px;
+    line-height: 127%;
+    text-transform: uppercase;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0;
@@ -252,4 +254,12 @@ text-transform: capitalize;
     border-radius: 5px;
     border: none;
     background-image: url(../images/cart.svg);
+}
+.menu-selekt{
+    color: var(--dark);
+    font-size: 15px;
+    appearance: none;
+    flex-basis:279px ;
+    border-image: url(..);
+    background-size: 144px 100px;
 }
