@@ -7,13 +7,16 @@
     --dark:#443737;
     --light:#FFFFFF;
     --light-rgb:225, 225,225;
-    --line: #dedede
+    --line: #dedede;
+    --tr: 0.5s;
 }
 body{
    font-family: var(--open-sans );
+   
 }
 a{
     text-decoration: none;
+
 }
 .container{
     width: 100%;
@@ -56,6 +59,7 @@ a{
     height: 3px;
     background-color: transparent;
     border-radius: 1.5px;
+    transition: var(--tr);
 }
 .nav-link:hover::after{
     background-color: var(--accent-lighd);
@@ -69,7 +73,13 @@ a{
     font-size: 15px;
     font-weight: 700;
     position: relative;
-}.cart::before{
+    transition: var(--tr);
+}
+.cart:hover{
+    box-shadow: #e1d9d5 4px 2px ;
+    border-radius: 5px;
+}
+.cart::before{
     content: '';
     display: block;
     width: 30px;
@@ -124,6 +134,7 @@ a{
 }
 .breadcrumbs-link{
     color: rgb(var(--light-rgb), 0.5);  
+    transition: var(--tr);
 }
 .breadcrumbs-link:hover{
     color: var(--accent-lighd);
@@ -198,9 +209,11 @@ text-transform: capitalize;
     background-color: var(--accent-lighd);
     border: none;
     border-radius: 5px;
+    transition:var(--tr);
 }
 .banner-btn:hover{
     background-color: var(--accent-dark);
+
 }
 
 
@@ -279,6 +292,10 @@ text-transform: capitalize;
     border-radius: 5px;
     border: none;
     color:#1e2f40 ;
+    transition: var(--tr);
+}
+.menu-btn:hover{
+    background-color: var(--accent-dark);
 }
 .menu-btn::before{
     content: '';
@@ -343,6 +360,18 @@ text-transform: capitalize;
     font-size: 15px;
     line-height: 160%;
 }
+.footer-link:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    border-radius: 1.5px;
+    transition: var(--tr);
+}
+.footer-link:hover::after{
+    background-color: var(--accent-lighd);
+}
 .footer-list{
     list-style-type: none;
     padding-left: 0;
@@ -370,4 +399,8 @@ text-transform: capitalize;
     font-weight: 800;
     text-transform: uppercase;
     margin-top: 12px;
+    transition: var(--tr);
+}
+.footer-tel:hover{
+    color: aliceblue;
 }
