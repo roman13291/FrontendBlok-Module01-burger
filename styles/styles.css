@@ -23,6 +23,7 @@ a{
     max-width: 1108px;
     margin: 0 auto;
     padding: 0 15px;
+    box-sizing: border-box;
 }
 /*header*/
 .header{
@@ -537,3 +538,5 @@ text-transform: capitalize;
 .contact-tel:hover {
     color: var(--accent-light);
 }
+/* media*/
+
