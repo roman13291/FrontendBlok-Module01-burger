@@ -558,7 +558,8 @@ text-transform: capitalize;
     }
     .header-wrapper{
         gap: 45px;
-    }.nav{
+    }
+    .nav{
         gap: 22px;
     }
     .banner{
@@ -569,5 +570,8 @@ text-transform: capitalize;
     }
     .menu-header{
         margin-top: 80px;
+    }
+    .menu-box{
+        grid-template-columns: repeat (2, 1fr) ;
     }
 }
