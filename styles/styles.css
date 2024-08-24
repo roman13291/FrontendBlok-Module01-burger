@@ -36,6 +36,16 @@ a{
     padding-top: 26px;
     padding-bottom: 26px;
 }
+.burger-menu{
+    display: none;
+    width: 34px;
+    height: 22px;
+    background-image: url(../images/icons8-.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-color: transparent;
+    border: none;
+}
 .logo{
     display: block;
     width: 176px;
@@ -43,6 +53,7 @@ a{
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    
 }
 .nav{
     flex-grow: 1;
@@ -366,7 +377,8 @@ text-transform: capitalize;
 }
 .footer-wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    gap: 15px;
 }
 .footer-logo{
     display: block;
@@ -598,11 +610,104 @@ text-transform: capitalize;
     .menu-item._add .menu-info{
         flex-basis: 40%;
     }
+    .footer{
+        padding-top: 62px;
+        padding-bottom: 71px;
+    }
+    .footer-nav{
+        margin-bottom: 20px;
+    }
     .footer-item:last-child{
       display: none;  
     }
     .footer-tel._mobile{
         display: block;
+        text-align: left;
     }
 }
-13
+@media (max-width: 730px){
+    .header-wrapper{
+        gap: 21px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+
+    }
+    .nav{
+        display: none;
+    }
+    .nav._modal{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link::after{
+        display: none;
+    }
+    .modal{
+        width: 100%;
+        max-width: 500px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #FFF8DC;
+        padding: 40px 15px;
+        position: absolute;
+        top: -400px;
+        box-sizing: border-box;
+        transition: var(--tr);
+    }
+    .burger-menu{
+        display:block ;
+    }
+    .logo{
+        width: 116px;
+        height: 37px;
+        flex-grow: 1;
+    }
+    .modal-close{
+       display: block; 
+       width: 22px;
+       height: 22px;
+       background-image: url(../images/iconswer.svg);
+       border: none;
+       background-repeat: no-repeat;
+       border-color: transparent;
+       background-size: contain;
+       position: absolute;
+       top: 20px;
+       right: 20px;
+    }
+    .hero-description{
+        padding-top: 57px;
+        padding-bottom: 55px;
+    }
+    .breadcrumbs{
+        font-style: 14px;
+    }
+    .hero-title{
+        font-size: 38px;
+        margin-top: 28px;
+        margin-bottom: 13px;
+    }
+    .hero-description{
+        font-size: 12px;
+        line-height: 166%;
+    }
+    .banner{
+        margin-top: 33px;
+    }
+    .banner-wrapper{
+        padding: 36px 15px 30px 15px ;
+    }
+    .banner-title{
+        margin-bottom: 9px;
+    }
+    .banner-description{
+        font-size: 14px;
+        margin-bottom: 20px;
+        max-width: 220px;
+    }
+    .banner-btn{
+        max-width: 198px;7..
+    }
+}
