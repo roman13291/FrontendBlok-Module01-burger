@@ -708,6 +708,75 @@ text-transform: capitalize;
         max-width: 220px;
     }
     .banner-btn{
-        max-width: 198px;7..
+        max-width: 198px;
+    }
+    .menu-header{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .menu-title{
+      font-size: 27px;  
+    }
+    .menu-selekt{
+        font-size: 15px;
+        flex-basis: 136px;
+        width: 136px;
+        background-position:93% center ;
+        padding: 13px 15px;
+    }
+    .menu-box{
+        gap: 24px 20px;
+    }
+    .menu-thumb{
+        height: 50vw;
+        margin-bottom: 10px;
+    }
+    .menu-item._add .menu-thumb{
+        height: 30vw;
+    }
+    .menu-name{
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    .menu-prce{
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+    .menu-btn{
+        padding: 11px 22px;
+    }
+    .footer{
+        margin-top: 80px;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+        gap: 35px;
+        position: relative;
+    }
+    .footer-logo{
+        margin-bottom: 9px;
+    }
+    .footer-tel._mobile{
+        top: -13px;
+        position: absolute;
+        right: 0;
+    }
+    .footer-tel._mobile + .footer-tel._mobile{
+        top: 10px;
+    }
+    .footer-title{
+        font-size: 18px;
+    }
+    .footer-nav{
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 450px) {
+    .menu-item._add .menu-thumb{
+        flex-basis: calc(100%-130px-20px);
+        height: 38vw;
+    }
+    .menu-item._add .menu-info{
+        flex-basis: 130px;
     }
 }
