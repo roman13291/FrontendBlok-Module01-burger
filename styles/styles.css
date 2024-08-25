@@ -559,6 +559,9 @@ text-transform: capitalize;
 .contact-tel:hover {
     color: var(--accent-light);
 }
+.modal{
+    display: none;
+}
 /* media*/
 
 @media (max-width:1088px) {
